@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+    <button class="button">Button</button>
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
     <ul>
