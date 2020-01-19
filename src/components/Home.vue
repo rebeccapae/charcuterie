@@ -8,6 +8,9 @@
                 <p class="title">Charcuterie</p>
                 <p class="subtitle">Everything in One Place</p>
             </div>
+            <button class="button is-medium is-rounded" id="create-board">Create Board
+                <i class="fas fa-plus"></i>
+            </button>
         </div>
         <div class="hero-square">
             <div class= "hero-square__1"></div>
@@ -47,18 +50,18 @@ export default {
 
 .hero-main  {
     width: 100%;
-    padding-bottom: 40%;
+    padding-bottom: 60%;
     position: relative;
-    margin-bottom: 20%;
+    margin-bottom: 10%;
 }
 
 .hero-text {
     text-align: left;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     /* display: inline-block; */
     position: absolute;
     left: 0;
-    width: 40%;
+    width: 50%;
     height: 100%;
 }
 
@@ -71,11 +74,28 @@ export default {
 } */
 
 .hero-text__main {
-    margin: auto;
+    margin-top: 25%;
+}
+
+.hero-text__main p{
+    font-size: 5vw;
+}
+
+#create-board {
+    margin-top: 8%;
+}
+
+.button {
+    border-color: #B59CD9;
+}
+
+.fas {
+    margin-left: 5%;
+    content: #0C3559;
 }
 
 .hero-square {
-    width: 60%;
+    width: 50%;
     height: 100%;
     background-color: #F2D0F2;
     position: absolute;
