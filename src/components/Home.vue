@@ -48,9 +48,16 @@ export default {
 
 <style scoped>
 
+#test  {
+    background: red;
+    height: 100px;
+    border: 10px solid black;
+    /* box-sizing: border-box; */
+}
+
 .hero-main  {
     width: 100%;
-    padding-bottom: 60%;
+    padding-bottom: 40%;
     position: relative;
     margin-bottom: 10%;
 }
@@ -78,7 +85,7 @@ export default {
 }
 
 .hero-text__main p{
-    font-size: 5vw;
+    font-size: 3vw;
 }
 
 #create-board {

@@ -14,8 +14,10 @@
 
     <div class="navbar-menu">
       <div class="navbar-start">
-        <a class="navbar-item" href="/">
-          Home
+        <a class="navbar-item">
+          <router-link to='/'>
+            Home
+          </router-link>
         </a>
         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link" href="/">
@@ -46,9 +48,11 @@
           <div class="field is-grouped">
             <p class="control">
               <a id="button__all-boards" class="button">
-                <span>
-                  All Boards
-                </span>
+                  <router-link to ='/boards'>
+                    <span>
+                      All Boards
+                    </span>
+                  </router-link>
               </a>
             </p>
             <p class="control">
@@ -76,6 +80,7 @@ export default {
 
 .navbar {
   margin-top: 1%;
+  background: none;
 }
 .navbar-item img {
   max-height: 2.5rem;
