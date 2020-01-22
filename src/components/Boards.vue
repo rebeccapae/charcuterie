@@ -2,36 +2,94 @@
 <div class="container-box">
     <div class="background"></div>
     <div class="card-collection">
-        <div class="card">
-            <div class="card-content">
-                <div class="media">
-                    <div class="media-left">
-                        <figure class="image is-48x48">
-                            <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-                        </figure>
+        <div class="columns">
+            <div class="column">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-left">
+                                <figure class="image is-48x48">
+                                    <img src="../assets/time.jpg">
+                                </figure>
+                            </div>
+                            <div class="media-content">
+                                <p class="title is-4">Macarons</p>
+                                <p class="subtitle is-6">@johnsmith</p>
+                            </div>
+                        </div>
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Phasellus nec iaculis mauris.
+                            <a href="#">#css</a> <a href="#">#responsive</a>
+                            <br>
+                        </div>
                     </div>
-                    <div class="media-content">
-                        <p class="title is-4">John Smith</p>
-                        <p class="subtitle is-6">@johnsmith</p>
-                    </div>
-                </div>
-                <div class="content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                    <a href="#">#css</a> <a href="#">#responsive</a>
-                    <br>
-                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                    <footer class="card-footer">
+                        <a href="#" class="card-footer-item">Open</a>
+                        <a href="#" class="card-footer-item">Edit Tile</a>
+                        <a href="#" class="card-footer-item">Delete</a>
+                    </footer>
                 </div>
             </div>
-            <footer class="card-footer">
-                <a href="#" class="card-footer-item">Open</a>
-                <a href="#" class="card-footer-item">Edit</a>
-                <a href="#" class="card-footer-item">Delete</a>
-            </footer>
+            <div class="column">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-left">
+                                <figure class="image is-48x48">
+                                    <img src="../assets/scrapbook.jpg">
+                                </figure>
+                            </div>
+                            <div class="media-content">
+                                <p class="title is-4">Cakes</p>
+                                <p class="subtitle is-6">@johnsmith</p>
+                            </div>
+                        </div>
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Phasellus nec iaculis mauris.
+                            <a href="#">#css</a> <a href="#">#responsive</a>
+                            <br>
+                        </div>
+                    </div>
+                    <footer class="card-footer">
+                        <a href="#" class="card-footer-item">Open</a>
+                        <a href="#" class="card-footer-item">Edit Tile</a>
+                        <a href="#" class="card-footer-item">Delete</a>
+                    </footer>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-left">
+                                <figure class="image is-48x48">
+                                    <img src="../assets/flowers.jpg">
+                                </figure>
+                            </div>
+                            <div class="media-content">
+                                <p class="title is-4">Tarts</p>
+                                <p class="subtitle is-6">@johnsmith</p>
+                            </div>
+                        </div>
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Phasellus nec iaculis mauris.
+                            <a href="#">#css</a> <a href="#">#responsive</a>
+                            <br>
+                        </div>
+                    </div>
+                    <footer class="card-footer">
+                        <a href="#" class="card-footer-item">Open</a>
+                        <a href="#" class="card-footer-item">Edit Tile</a>
+                        <a href="#" class="card-footer-item">Delete</a>
+                    </footer>
+                </div>
+            </div>
         </div>
-    </div>
-    
-    </div>     
+    </div> 
+</div>    
 </template>
 
 <script>
@@ -51,18 +109,32 @@ export default {
 
 }
 .background {
-    background: url("../assets/time.jpg") center/cover border-box local;
+    background: url("../assets/desk.jpg") center/cover border-box;
     width: 100%;
     height: 100%;
     position: absolute;
 } 
 
 .card-collection {
-    
-}
-.card {
-    width: 50%;
+    display: inline-block;
+    text-align: left;
+    margin: 3%;
+    margin-top: 10%;
 
+}
+
+.card {
+    display: inline-block;
+    width: 100%;
+}
+
+.image {
+    text-align: center;
+    vertical-align: middle;
+}
+
+img {
+    display: inline;
 }
 
 </style>

@@ -60,6 +60,7 @@ export default {
     padding-bottom: 40%;
     position: relative;
     margin-bottom: 10%;
+    margin-top: 3%;
 }
 
 .hero-text {
