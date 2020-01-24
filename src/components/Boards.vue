@@ -25,7 +25,7 @@
                         </div>
                     </div>
                     <footer class="card-footer">
-                        <a href="#" class="card-footer-item">Open</a>
+                        <a class="card-footer-item">Open</a>
                         <a href="#" class="card-footer-item">Edit Tile</a>
                         <a href="#" class="card-footer-item">Delete</a>
                     </footer>

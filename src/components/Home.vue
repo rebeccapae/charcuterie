@@ -37,6 +37,36 @@
         </div>
         </nav>
     </div>
+    <div class="to-do-container">
+        <div class="card to-do">
+            <div class="card-content">
+                <p class="title">
+                To-Do
+                </p>
+                <p class="subtitle">
+                Create a to-do list to stay on top of things
+                </p>
+                <div class="content to-do__list">
+                    <li class="to-do__list-item">
+                        <input type="checkbox" class="to-do__list-check" id="checkbox1">
+                        <label for="checkbox1">one</label>  
+                    </li>
+                        <li class="to-do__list-item">
+                        <input type="checkbox" class="to-do__list-check" id="checkbox2">
+                        <label for="checkbox2">two</label>  
+                    </li>
+                        <li class="to-do__list-item">
+                        <input type="checkbox" class="to-do__list-check" id="checkbox3">
+                        <label for="checkbox3">three</label>  
+                    </li>
+                        <li class="to-do__list-item">
+                        <input type="checkbox" class="to-do__list-check" id="checkbox4">
+                        <label for="checkbox4">four</label>  
+                    </li>
+                </div>
+            </div>
+        </div>
+    </div>
     </section>
 </template>
 
@@ -48,16 +78,9 @@ export default {
 
 <style scoped>
 
-#test  {
-    background: red;
-    height: 100px;
-    border: 10px solid black;
-    /* box-sizing: border-box; */
-}
-
 .hero-main  {
     width: 100%;
-    padding-bottom: 40%;
+    padding-bottom: 50vh;
     position: relative;
     margin-bottom: 10%;
     margin-top: 3%;
@@ -82,6 +105,7 @@ export default {
 } */
 
 .hero-text__main {
+    width: 100%;
     margin-top: 25%;
 }
 
@@ -198,8 +222,58 @@ export default {
     font-weight: bold;
 }
 
-.tabs.is-boxed a:hover {
+.to-do {
+    width: 60%;
+    margin: auto;
+}
 
+.to-do__list {
+    list-style: none;
+    text-align: left;
+    margin: 1rem;
+}
+
+.to-do__list-item {
+    margin: 1rem;
+    position: relative;
+}
+
+label::before {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #A64EA0;
+    content: ' ';
+    border-radius: 10px;
+    float: left;
+    margin:0 10px;
+    cursor: pointer;
+}
+
+label::after {
+    display: none;
+    top: 5px;
+    left: 15px;
+    content: '';
+    color: #B59CD9;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #B59CD9;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type=checkbox]:checked ~ label::after{
+    display: block;
+}
+
+input[type=checkbox]{
+    display:none;
+}
+
+
+.to-do__list-check {
+    border-radius: 10px;
 }
 
 /* Color Theme Swatches in Hex */
