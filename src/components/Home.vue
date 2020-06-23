@@ -5,7 +5,7 @@
     <!-- Image in hero-main -->
         <div class="hero-text has-text-centered">
             <div class="hero-text__main">
-                <p class="title">Charcuterie</p>
+                <p class="title">Charcuterie Board</p>
                 <p class="subtitle">Everything in One Place</p>
             </div>
             <button class="button is-medium is-rounded" id="create-board">Create Board
